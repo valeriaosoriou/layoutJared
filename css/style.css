@@ -1,0 +1,144 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*HORIZONTAL NAVBAR: real links menu to a new window. Use goole, netflix, HBO, Nike, Amazon*/
+
+.nav{
+  width: 100%;
+  height: 100px;
+  margin: 10px;
+  padding: 20px;
+  background-color: aqua;
+  font-size: 20px;
+  list-style-type: none; /*removes the bullets*/
+  overflow: hidden; /*so it does not go over the other sections*/  
+}
+li{
+  float: left;
+}
+
+li a{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font: 'abel';
+  font-size: 30px;
+  margin: 10px;
+  padding: 10px 15px;
+
+}
+
+
+/*SECTION1*/
+.row1{
+  position: relative;
+  /*background-color: blue;*/
+  height: 200px;
+  margin: 10px;  
+}
+
+.column{
+  float: left;
+  width: 32%;
+  height: 200px;
+  background-color: beige;
+  margin: 9px;
+ 
+}
+
+.row1:after{ /*clear floats after the columns*/
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*.left{
+  position: absolute;
+  top: 0px;
+  left: 0px; 
+  width: 33.3%;
+  height: 200px;
+  background-color: blueviolet;
+}
+
+.middle{
+  position: absolute;
+  top: 0px;
+  left: 393px;
+  width: 33.3%;
+  height: 200px;
+  background-color: cadetblue;
+}
+
+.right{
+  background-color: brown;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 33.3%;
+  height: 200px;
+}
+*/
+
+
+/*SECTION2*/
+
+.row2{
+  display: inline-block;
+  width: 100%;
+  /*background-color: darkgoldenrod;*/
+  height: 200px;
+  
+ 
+  
+}
+
+.left1{
+  
+  width: 50%;
+  height: 200px;
+  background-color: lightpink;
+  
+  
+  }
+
+.right1{
+  
+  width: 50%;
+  height: 200px;
+  background-color: lightgreen;
+  
+  
+}
+
+/*FOOTER*/
+.footer{
+  position: relative;
+  background-color: mediumpurple;
+  height: 100px;
+  padding: 20px;
+  margin: 10px;
+}
+
+}
+
+
+
+
+/*MEDIAQUERIES*/
+
+/*MOBILE*/
+@media only screen and (max-width: 450px){
+.column{
+  width: 100%;
+}
+}
+
+
+
+
+/*flick on hover section 4 and 5 , put text on the "back"*/
+
+
